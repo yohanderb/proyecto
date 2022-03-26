@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root{
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);   
+    --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+    --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--Very-dark-blue-main-BG);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    background-color: var(--Very-dark-blue-card-BG);
+    width: 350px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    padding: 22px;
+    gap: 15px;
+    border-radius: 15px;
+    box-shadow: 0 25px 50px 15px #0c1729;
+}
+
+.precio_tiempo{
+    display: flex;
+    justify-content:space-between ;
+    border-bottom: 1px solid var(--Very-dark-blue-line);
+    padding-bottom: 20px;
+
+}
+
+.icono_eth{
+        display: flex;
+        gap: 5px;
+        color: var(--Cyan);
+        font-weight: 600;
+     }
+
+.icono_tiempo{
+    display: flex;
+    gap: 5px;
+    color: var(--Soft-blue);
+     }
+     
+.titulo_card{
+    color: var(--White);
+}
+.titulo_card:hover{
+    cursor: pointer; 
+    color: var(--Cyan);
+
+}
+.segundo_parrafo{
+    color: var(--Soft-blue);
+}
+
+.ultimo_texto img {
+
+    width: 32px;
+    border: 1px solid white;
+    border-radius: 100%;
+}
+
+.ultimo_texto{
+    display: flex;
+    gap: 13px;
+    color: var(--Soft-blue);
+
+}
+
+.ultimo_texto p{
+    margin-top: 5px;
+}
+
+.ultimo_texto span{
+    color: var(--White);
+    font-weight: 400;
+}
+
+.imagen_1 {
+    border-radius: 15px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+span:hover{
+    cursor: pointer; 
+    color: var(--Cyan);
+
+}
+
+.capa_imagen{
+    position: absolute;
+    background-color: hsla(178, 100%, 50%, 0.411);
+    width: 300px;
+    height: 300px;
+    top: 230px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.capa_imagen:hover{
+    /* animation: capaImagen 1s forwards; */
+    opacity: 1;
+}
+
+@keyframes capaImagen {
+    0% {opacity: 0;}
+
+    100% {opacity: 1;}
+
+}
