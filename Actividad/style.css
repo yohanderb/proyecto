@@ -5,6 +5,7 @@
     background-color: red;
     color: yellow;
     font-size: 25px;
+    
 
 }
 
@@ -42,4 +43,13 @@
     background-color: red;
     color: yellow;
     cursor: pointer;
+}
+
+@media only screen and (max-width:500px){
+    .cuadrado{
+        width: 80px;
+        height: 80px;
+        /* ajuste de pantalla para moviles y navegador */
+    
+    }
 }
